@@ -1,0 +1,22 @@
+{
+  "name": "in-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ygg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yegao/in-loader.git"
+  },
+  "keywords": [
+    "in-loader"
+  ],
+  "bugs": {
+    "url": "https://github.com/yegao/in-loader/issues"
+  },
+  "homepage": "https://github.com/yegao/in-loader#readme",
+  "description": ""
+}
