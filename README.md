@@ -2,7 +2,7 @@
 npm install -D in-loader
 
 **javascript**
-```javascript```
+```javascript
 <in>./src/a.js</in>
 export default "hello world!"
 ```
