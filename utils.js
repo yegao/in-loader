@@ -1,6 +1,6 @@
 const fs = require('fs');
 let tag,reg,greg,flag = false;
-const replace = (buffer,options = {tag:"in"}) => {
+const replace = (buffer,options) => {
   if(!flag){
     tag = options.tag;
     reg = new RegExp(`<${tag}>(.*?)</${tag}>`);
