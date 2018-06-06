@@ -18,5 +18,10 @@
     "url": "https://github.com/yegao/in-loader/issues"
   },
   "homepage": "https://github.com/yegao/in-loader#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  }
 }

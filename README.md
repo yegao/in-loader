@@ -48,3 +48,27 @@ module: {
   ]
 }
 ```
+if you want to use some other tag instead of <in></in> ,you can use option tag;
+**webpack.config.js**
+```js
+module: {
+  rules: [
+    ...
+    {
+      test: /\.js$/,
+      use: ['babel-loader',{
+        loader:'in-loader',
+        option:{
+          tag:'aaa'
+        }
+      }]
+    }
+    ...
+  ]
+}
+```
+**javascript**
+```javascript
+<aaa>./src/a.js</aaa>
+export default "hello world!"
+```

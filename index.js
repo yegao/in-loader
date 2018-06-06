@@ -1,4 +1,6 @@
+import {getOptions} from 'loader-utils';
 const utils = require('./utils.js')
-module.exports = function (source) {
-    return utils.replace(source);
+module.exports = function(source) {
+  const options = getOptions(this);
+  return utils.replace(source,options);
 }

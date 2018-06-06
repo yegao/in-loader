@@ -1,9 +1,16 @@
 const fs = require('fs');
-
-function replace (buffer){
+let reg = new RegExp("<in>(.*?)<\/in>");
+let greg = new RegExp("<in>(.*?)<\/in>",'g');
+let flag = false;
+let tag;
+function replace (buffer,options={tag:"in"}){
+  if(!flag){
+    tag = options.tag;
+    flag = true;
+  }
   var insource = buffer.toString();
-  if(/<in>(.*?)<\/in>/.test(insource)){
-    insource = insource.replace(/<in>(.*?)<\/in>/g,function(match,path){
+  if(reg.test(insource)){
+    insource = insource.replace(greg,function(match,path){
       let buffer = fs.readFileSync(path);
       return replace(buffer);
     });
