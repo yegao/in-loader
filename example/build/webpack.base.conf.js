@@ -27,7 +27,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: ['babel-loader','in-loader'],
+        use: ['babel-loader',{
+          loader:'in-loader',
+          options:{
+            tag:'aaa'
+          }
+        }],
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
