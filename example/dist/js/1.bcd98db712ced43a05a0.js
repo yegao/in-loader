@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{O6Si:function(e,o,i){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),console.log("this is in"),o.default="hello world!"},Vtdi:function(e,o,i){"use strict";var t,l=i("O6Si"),s=(t=l)&&t.__esModule?t:{default:t};console.log(s.default)}},[["Vtdi",0]]]);
